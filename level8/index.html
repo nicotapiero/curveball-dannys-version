@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Curveball (Danny's Version)</title>
+  
+  <style>
+    body {
+      background: black;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    #container {
+      width: 100%;
+      height: 100%;
+      align-self: center;
+    }
+    
+    ruffle-player {
+      width: 99vw;
+      height: 99vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container"></div>
+  
+  <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = window.RufflePlayer.newest();
+        let player = ruffle.create_player();
+        let container = document.getElementById("container");
+        container.appendChild(player);
+        player.stream_swf_url("https://cdn.glitch.global/8229b4e2-b875-43ba-94c6-0292393b8975/testfordanny.swf?v=1728508684044");
+    });
+  </script>
+  <script src="/ruffle.js"></script>
+</body>
+</html>
+
