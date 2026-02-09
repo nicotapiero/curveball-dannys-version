@@ -38,10 +38,10 @@
 
     window.addEventListener("DOMContentLoaded", () => {
         let ruffle = window.RufflePlayer.newest();
-        let player = ruffle.create_player();
+        let player = ruffle.createPlayer();
         let container = document.getElementById("container");
         container.appendChild(player);
-        player.stream_swf_url("https://cdn.glitch.global/fcf3249d-d009-45cb-af56-694891865faa/level9.swf?v=1728566855402");
+        player.load("../swfs/level9.swf");
     });
   </script>
   <script src="../ruffle.js"></script>
