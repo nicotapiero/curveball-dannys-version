@@ -38,7 +38,7 @@
 
     window.addEventListener("DOMContentLoaded", () => {
         let ruffle = window.RufflePlayer.newest();
-        let player = ruffle.create_player();
+        let player = ruffle.createPlayer();
         let container = document.getElementById("container");
         container.appendChild(player);
         player.stream_swf_url("../swfs/testfordanny.swf");
